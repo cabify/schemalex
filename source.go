@@ -15,8 +15,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/cabify/schemalex/internal/errors"
 	"github.com/go-sql-driver/mysql"
-	"github.com/schemalex/schemalex/internal/errors"
 )
 
 // SchemaSource is the interface used for objects that provide us with

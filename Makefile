@@ -5,23 +5,10 @@ VERSION=$(patsubst "%",%,$(lastword $(shell grep 'const Version' schemalex.go)))
 ARTIFACTS_DIR=$(CURDIR)/artifacts/$(VERSION)
 RELEASE_DIR=$(CURDIR)/release/$(VERSION)
 SRC_FILES = $(wildcard *.go model/*.go diff/*.go cmd/schemalex/*.go internal/*/*.go)
-GITHUB_USERNAME=schemalex
-
-installdeps: glide-$(GOOS)-$(GOARCH)/glide
-	PATH="glide-$(GOOS)-$(GOARCH):$(PATH)" glide install
-
-glide-$(GOOS)-$(GOARCH):
-	@echo " * Creating $(@F)"
-	@mkdir -p $(@F)
-	
-glide-$(GOOS)-$(GOARCH)/glide:
-	@$(MAKE) glide-$(GOOS)-$(GOARCH)
-	@wget -O - https://github.com/Masterminds/glide/releases/download/v0.12.3/glide-v0.12.3-$(GOOS)-$(GOARCH).tar.gz | tar xvz
-	@mv $(GOOS)-$(GOARCH)/glide glide-$(GOOS)-$(GOARCH)
-	@rm -rf $(GOOS)-$(GOARCH)
+GITHUB_USERNAME=cabify
 
 test:
-	go test -v $(shell glide-$(GOOS)-$(GOARCH)/glide novendor)
+	go test -v ./...
 
 generate:
 	go generate

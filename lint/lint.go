@@ -5,9 +5,9 @@ import (
 	"context"
 	"io"
 
+	"github.com/cabify/schemalex"
+	"github.com/cabify/schemalex/format"
 	"github.com/pkg/errors"
-	"github.com/schemalex/schemalex"
-	"github.com/schemalex/schemalex/format"
 )
 
 type Linter struct{}

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/schemalex/schemalex/format"
-	"github.com/schemalex/schemalex/model"
+	"github.com/cabify/schemalex/format"
+	"github.com/cabify/schemalex/model"
 	"github.com/stretchr/testify/assert"
 )
 
