@@ -3,7 +3,7 @@ go:
   - 1.11
   - tip
 before_script:
-  - make generate
+  - GO111MODULE=on make generate
 script:
-  - make test
-  - make check-diff
+  - GO111MODULE=on make test
+  - GO111MODULE=on make check-diff
