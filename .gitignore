@@ -1,2 +1,5 @@
 vendor/*
 glide-*-*/glide
+artifacts
+github_token
+release
