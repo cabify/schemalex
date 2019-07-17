@@ -9,8 +9,8 @@ import (
 	"runtime"
 
 	"github.com/pkg/errors"
-	"github.com/schemalex/schemalex"
-	"github.com/schemalex/schemalex/diff"
+	"github.com/cabify/schemalex"
+	"github.com/cabify/schemalex/diff"
 )
 
 func main() {

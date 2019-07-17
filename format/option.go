@@ -3,8 +3,8 @@ package format
 import (
 	"strings"
 
-	"github.com/schemalex/schemalex"
-	"github.com/schemalex/schemalex/internal/option"
+	"github.com/cabify/schemalex"
+	"github.com/cabify/schemalex/internal/option"
 )
 
 type Option = schemalex.Option
