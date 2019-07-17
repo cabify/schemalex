@@ -3,7 +3,7 @@ package model_test
 import (
 	"testing"
 
-	"github.com/schemalex/schemalex/model"
+	"github.com/cabify/schemalex/model"
 )
 
 func TestStatement(t *testing.T) {

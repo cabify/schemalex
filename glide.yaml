@@ -1,4 +1,4 @@
-package: github.com/schemalex/schemalex
+package: github.com/cabify/schemalex
 import:
 - package: github.com/deckarep/golang-set
 - package: github.com/pkg/errors
