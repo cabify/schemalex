@@ -192,6 +192,11 @@ CREATE TABLE foo (
 			`,
 			Expect: "",
 		},
+		{
+			Before: "CREATE TABLE `test` (\n`valid` TIMESTAMP (3) NOT NULL DEFAULT NOW(3)\n)",
+			After:  "CREATE TABLE `test` (\n`valid` TIMESTAMP (3) NOT NULL DEFAULT NOW(3)\n)",
+			Expect: "",
+		},
 	}
 
 	var buf bytes.Buffer
